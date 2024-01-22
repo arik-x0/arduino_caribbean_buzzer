@@ -10,5 +10,4 @@ class CaribbeanTune{
         void playPhase_1();
         void playPhase_2();
         void playPhase_3();
-
 };
