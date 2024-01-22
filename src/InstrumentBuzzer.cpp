@@ -1,4 +1,4 @@
-#include "InstrumentBuzzer.h"
+#include "../include/InstrumentBuzzer.h"
 
 InstrumentBuzzer::InstrumentBuzzer(int buzzerIO, int soundModifier=1):
     buzzerIO(buzzerIO), soundModifier(soundModifier){}
