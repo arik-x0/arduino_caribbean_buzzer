@@ -1,5 +1,5 @@
-#include "Constant.h";
-#include "InstrumentBuzzer.h";
+#include "Constant.h"
+#include "InstrumentBuzzer.h"
 
 class CaribbeanTune{
     private:

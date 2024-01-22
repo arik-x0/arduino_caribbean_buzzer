@@ -1,5 +1,5 @@
-#include "Constant.h";
-#include "Arduino.h";
+#include "Constant.h"
+#include "Arduino.h"
 
 class InstrumentBuzzer{
     private:

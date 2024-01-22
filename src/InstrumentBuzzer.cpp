@@ -3,7 +3,7 @@
 InstrumentBuzzer::InstrumentBuzzer(int buzzerIO, int soundModifier=1):
     buzzerIO(buzzerIO), soundModifier(soundModifier){}
 
-void InstrumentBuzzer::playNote(Notes note, int duration, int delayGap=0)
+void InstrumentBuzzer::playNote(Note note, int duration, int delayGap=0)
 {
     tone(this->buzzerIO, note, duration);
     delay(duration + 80 + delayGap);

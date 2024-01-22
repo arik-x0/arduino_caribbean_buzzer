@@ -1,4 +1,4 @@
-#include "CaribbeanTune.h";
+#include "CaribbeanTune.h"
 
 CaribbeanTune::CaribbeanTune(InstrumentBuzzer* instrument):
     instrument(instrument){}
