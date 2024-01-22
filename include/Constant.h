@@ -1,19 +1,19 @@
-const int BUZZER_ID = 8;
-const int MODIFIER = 1;
+const int BUZZER_IO = 8;
 
-enum Notes
+enum Note
 {
-  A = 880 * MODIFIER,
-  A_ = 920 * MODIFIER,
-  B = 990 * MODIFIER,
-  C = 534 * MODIFIER,
-  D = 587 * MODIFIER,
-  E = 659 * MODIFIER,
-  F = 698 * MODIFIER,
-  G = 784 * MODIFIER,
+  A=880,
+  A_=920,
+  B=990,
+  C=534,
+  D=587,
+  E=659,
+  F=698,
+  G=784,
 };
 enum DurationPress
 {
-  SHORT = 100,
-  LONG = SHORT * 4,
+  TAP=50,
+  SHORT=100,
+  LONG=SHORT*4,
 };
