@@ -6,16 +6,13 @@ CaribbeanTune* tuner;
 void setup()
 {
   tuner = new CaribbeanTune(BUZZER_IO);
-  pinMode(8, OUTPUT);
+  pinMode(BUZZER_IO, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop()
 {
   tuner->playPhase_1();
-  for (;;)
-  {
-    tuner->playPhase_2();
-    tuner->playPhase_3();
-  }
+  tuner->playPhase_2();
+  tuner->playPhase_3();
 }
