@@ -1,5 +1,17 @@
+/**
+ * This is the I/O port located in the Arduino board.
+ * The purpose is to send voltage to the buzzer via jumping wires.
+ * 
+ * port 8 ====> buzzer =====> GND
+*/
 const int BUZZER_IO = 8;
 
+/**
+ * This is simply a enum list that contains frequencies of the musical notes
+ * source: https://pages.mtu.edu/~suits/notefreqs.html
+ * 
+ * The frequency = Hertz
+*/
 enum Note
 {
   C_3=131, // Do
@@ -30,6 +42,15 @@ enum Note
   Ab_5=932, // La+
   B_5=987, // Si
 };
+
+/**
+ * This simply time duration.
+ * The purpose to be used as either the duration of the note,
+ * the silence between notes, or short silence gap between notes.
+ * 
+ * In order for us to hear the sound as musical.
+ * The number is miliseconds
+*/
 enum DurationPress
 {
   TAP=50,
