@@ -3,7 +3,7 @@
 CaribbeanTune::CaribbeanTune(InstrumentBuzzer* instrument):
     instrument(instrument){}
 
-CaribbeanTune::CaribbeanTune(int buzzerIO, int soundModifier)
+CaribbeanTune::CaribbeanTune(int buzzerIO, int soundModifier=1)
 {
     this->instrument = new InstrumentBuzzer(buzzerIO, soundModifier);
 }
