@@ -5,7 +5,7 @@ InstrumentBuzzer::InstrumentBuzzer(int buzzerIO, int soundModifier=1):
 
 void InstrumentBuzzer::playNote(Note note, int duration, int delayGap=0)
 {
-    tone(this->buzzerIO, note, duration);
+    tone(this->buzzerIO, note * this->soundModifier, duration);
     delay(duration + 80 + delayGap);
 }
 
