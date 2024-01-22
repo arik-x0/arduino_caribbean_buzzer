@@ -8,6 +8,6 @@ class InstrumentBuzzer{
 
     public:
         InstrumentBuzzer(int buzzerID, int soundModifier=1);
-        void playNote(Notes note, int duration, int delayGap=0);
+        void playNote(Note note, int duration, int delayGap=0);
         void setModifier(int modifier);
 };
