@@ -1,4 +1,4 @@
-Repository that runs Pirates of the Caribbean tune in your Arduino buzzer
+Pirates of the Caribbean tune in your Arduino buzzer
 # Prerequisites
 
 ### Hardware
@@ -10,8 +10,8 @@ Repository that runs Pirates of the Caribbean tune in your Arduino buzzer
 
 ### Software
 - Arduino IDE
-Or
-- Visual Studio Code (with Arduino extension installed)
+**_OR_**
+* Visual Studio Code (with Arduino extension installed)
 
 Arduino IDE has more beginner friendly layout for learning Arduino and C++ language.
 However, its good practice to work with Visual Studio Code as most of the world works with it.
@@ -20,6 +20,7 @@ However, its good practice to work with Visual Studio Code as most of the world 
 Connect the circuit as shown in the diagram
 > [!IMPORTANT]
 > Make sure that the Jumping wire that connects Arduino GND is to the **_negative_** of the buzzer
+
 ![The Circuit diagram of connecting the hardware](assets/circuit_caribbean_buzzer.PNG)
 After finishing setting it up it should look similar to the diagram below.
 Just note the diagram show cases the Arduino Uno
