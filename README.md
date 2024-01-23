@@ -25,13 +25,14 @@ Connect the circuit as shown in the diagram
 After finishing setting it up it should look similar to the diagram below.
 Just note the diagram show cases the Arduino Uno
 ![The Arduino Circuit Diagram](assets/diagram_caribbean_buzzer.PNG)
+Make sure your setup is aligned with the arduino board you are using, otherwise you'll have problem compiling the program.
 
-After that make sure your setup is aligned with the arduino board you are using, otherwise you'll have problem compiling the program.
-If you have an issue with the setup here is a list things to consider for a fix:
-- Do you have your IDE use the correct Arduino board setup
-- Do you have the correct serial port setup in the IDE for the arduino
+Solutions to possible problems with IDE <=> Arduino setup:
+- IDE isn't configured with the correct **Arduino Board**
+- IDE isn't configured with the correct **Serial Port**
+
 Those 2 issues above shouldn't be an issue as the IDE finds the Arduino type and serial port for you automatically when you connect the USB cable to the computer.
-- Does the `.ino` file that runs arduino is the same name as in arduino.json configuration file. If you have an issue with that you can either rename the folder of the project or restart the Arduino IDE(usually fixes itself).
+* Does the `.ino` file that runs arduino is the same name as in arduino.json configuration file. If you have an issue with that you can either rename the folder of the project or restart the Arduino IDE(usually fixes itself).
 
 # Code
 ### Modification You Can Do
