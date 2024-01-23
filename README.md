@@ -40,12 +40,15 @@ Those 2 issues above shouldn't be an issue as the IDE finds the Arduino type and
 - Go to `include/Constant.h` file contains `BUZZER_IO` constant variable this is the port of arduino I/O that is connected to the Buzzer(Passive).
 __If you connect to a different pin/port make sure to change that `BUZZER_IO` value to align the pin/port you connected with the jumping wire__
 - `include/Constant.h` file contains `enum` of the musical notes distributed in frequencies(Hz). If you want to **_change_** the frequencies, change the value of the notes. The context values are [Musical Notes to Frequencies](https://pages.mtu.edu/~suits/notefreqs.html)
-- There is a sound multiplier variable that can multiply the frequency of the musical note. You can access it by editing the `CaribbeanTune` object in `arduino_caribbean_buzzer.ino` by adding additional __argument__ in the parenthesis
-This will look something like this:
+- There is a sound multiplier variable that can multiply the frequency of the musical note. You can access it by editing the `CaribbeanTune` object in `arduino_caribbean_buzzer.ino` by adding additional __argument__ in the parenthesis.
+
+__This will look something like this:__
 ```
+CaribbeanTune* tuner;
+int frequencyMultiplier = 2; // random number
+
 void setup()
 {
-  int frequencyMultiplier = 2; // random number
   tuner = new CaribbeanTune(BUZZER_IO, frequencyMultiplier);
   pinMode(BUZZER_IO, OUTPUT); // sets up the port pin for the arduino to connect to the buzzer
 }
