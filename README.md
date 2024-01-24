@@ -2,11 +2,11 @@ Pirates of the Caribbean tune in your Arduino buzzer
 # Prerequisites
 
 ### Hardware
-- *1 Arduino Board (I use Arduino Uno)
-- *1 Arduino USB cable
-- *1 BreadBoard
-- *1 Passive Buzzer
-- *2 jumping wires
+- 1 * Arduino Board (I use Arduino Uno)
+- 1 * Arduino USB cable
+- 1 * BreadBoard
+- 1 * Passive Buzzer
+- 2 * jumping wires
 
 ### Software
 - Arduino IDE
