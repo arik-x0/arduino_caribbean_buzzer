@@ -26,6 +26,7 @@ Connect the circuit as shown in the diagram
 
 After finishing setting it up it should look similar to the diagram below.
 Just note the diagram show cases the Arduino Uno
+
 ![The Arduino Circuit Diagram](assets/diagram_caribbean_buzzer.PNG)
 
 Make sure your setup is aligned with the arduino board you are using, otherwise you'll have problem compiling the program.
