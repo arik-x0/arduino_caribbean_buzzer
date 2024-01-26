@@ -1,5 +1,4 @@
 #include "../include/tunes/CaribbeanTune.h"
-#include "CaribbeanTune.h"
 
 CaribbeanTune::CaribbeanTune(InstrumentBuzzer* instrument):
     instrument(instrument){}
@@ -10,12 +9,12 @@ CaribbeanTune::CaribbeanTune(int buzzerIO, int soundModifier=1):
 CaribbeanTune::~CaribbeanTune(){ delete instrument; }
 
 CaribbeanTune::CaribbeanTune(const CaribbeanTune &other):
-    instrument(new InstrumentBuzzer(other.instrument)){}
+    instrument(new InstrumentBuzzer(*other.instrument)){}
 
 CaribbeanTune &CaribbeanTune::operator=(const CaribbeanTune &other)
 {
     if (&other == this) { return *this; }
-    this->instrument = new InstrumentBuzzer(other.instrument);
+    this->instrument = new InstrumentBuzzer(*other.instrument);
     return *this;
 }
 

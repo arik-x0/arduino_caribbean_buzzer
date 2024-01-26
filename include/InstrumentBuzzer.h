@@ -32,6 +32,8 @@ class InstrumentBuzzer{
         /**
          * The copy constructor of the class, copies the values of the other object.
          * Creates an object with the same values but separate entity.
+         * 
+         * @param other is the object that we copy the data from
         */
         InstrumentBuzzer(const InstrumentBuzzer& other);
         /**
