@@ -1,3 +1,6 @@
+#ifndef INSTRUMENTBUZZER_H
+#define INSTRUMENTBUZZER_H
+
 #include "Constant.h"
 #include "Arduino.h"
 
@@ -30,6 +33,13 @@ class InstrumentBuzzer{
         */
         InstrumentBuzzer(int buzzerIO, int soundModifier=1);
         /**
+         * The copy constructor of the class, copies the values of the other object.
+         * Creates an object with the same values but separate entity.
+         * 
+         * @param other is the object that we copy the data from
+        */
+        InstrumentBuzzer(const InstrumentBuzzer& other);
+        /**
          * Plays a tone uses the built in library of Arduino called "Tone.cpp"
          * which plays a frequency from the buzzer in set duration that you give it.
          * After the method finishes playing the tone it has a delay to prevent from method "tone"
@@ -52,3 +62,5 @@ class InstrumentBuzzer{
         */
         void setModifier(int modifier);
 };
+
+#endif // INSTRUMENTBUZZER_H

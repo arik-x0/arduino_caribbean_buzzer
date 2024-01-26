@@ -3,9 +3,19 @@
 CaribbeanTune::CaribbeanTune(InstrumentBuzzer* instrument):
     instrument(instrument){}
 
-CaribbeanTune::CaribbeanTune(int buzzerIO, int soundModifier=1)
+CaribbeanTune::CaribbeanTune(int buzzerIO, int soundModifier=1):
+    instrument(new InstrumentBuzzer(buzzerIO, soundModifier)){}
+
+CaribbeanTune::~CaribbeanTune(){ delete instrument; }
+
+CaribbeanTune::CaribbeanTune(const CaribbeanTune &other):
+    instrument(new InstrumentBuzzer(*other.instrument)){}
+
+CaribbeanTune &CaribbeanTune::operator=(const CaribbeanTune &other)
 {
-    this->instrument = new InstrumentBuzzer(buzzerIO, soundModifier);
+    if (&other == this) { return *this; }
+    this->instrument = new InstrumentBuzzer(*other.instrument);
+    return *this;
 }
 
 void CaribbeanTune::playSuspense()

@@ -1,3 +1,6 @@
+#ifndef CONSTANT_H
+#define CONSTANT_H
+
 /**
  * This is the I/O port located in the Arduino board.
  * The purpose is to send voltage to the buzzer via jumping wires.
@@ -57,3 +60,5 @@ enum DurationPress
   SHORT=100,
   LONG=SHORT*4,
 };
+
+#endif // CONSTANT_H
