@@ -1,5 +1,7 @@
-#include "../InstrumentBuzzer.h"
+#ifndef CARIBBEANTUNE_H
+#define CARIBBEANTUNE_H
 
+#include "../InstrumentBuzzer.h"
 class CaribbeanTune{
     private:
         InstrumentBuzzer* instrument;
@@ -15,3 +17,5 @@ class CaribbeanTune{
         void playPhase_2();
         void playPhase_3();
 };
+
+#endif // CARIBBEANTUNE_H

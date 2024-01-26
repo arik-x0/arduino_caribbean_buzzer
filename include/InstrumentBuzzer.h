@@ -1,3 +1,6 @@
+#ifndef INSTRUMENTBUZZER_H
+#define INSTRUMENTBUZZER_H
+
 #include "Constant.h"
 #include "Arduino.h"
 
@@ -59,3 +62,5 @@ class InstrumentBuzzer{
         */
         void setModifier(int modifier);
 };
+
+#endif // INSTRUMENTBUZZER_H
